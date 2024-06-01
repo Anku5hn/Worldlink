@@ -1,0 +1,65 @@
+/*Tailwind Include*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*Animation Frames*/
+@keyframes spin-clockwise{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes bottom-to-up{
+    from{
+        transform: translateY(100px);
+    }to{
+        transform: translateY(0px);
+    }
+}
+@keyframes left-to-right{
+    from{
+        transform: translateX(-100px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+@keyframes right-to-left{
+    from{
+        transform: translateX(100px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+/*Animation Classes*/
+.clockwise-spin{
+    animation: spin-clockwise 1s ease-in-out;
+}
+.animate-up{
+    animation: bottom-to-up 0.5s ease-in-out;
+}
+.animate-right{
+    animation: left-to-right 1s ease-in-out;
+}
+.animate-left{
+    animation: right-to-left 1s ease-in-out;
+}
+/*Logo Text Shadow*/
+.text-shadow{
+    text-shadow: 2px 2px #DBE2EF;
+
+}
+/*Get Quote Button Shadow Shadow*/
+.box-shadow{
+    box-shadow: 0 12px 16px 0 rgba(63, 114, 175,0.24),0 17px 50px 0 rgba(63, 114, 175,0.19);
+}
+
+/*Hide Scroll Bar*/
+.hide-scroll-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+.hide-scroll-bar::-webkit-scrollbar {
+    display: none;
+  }
