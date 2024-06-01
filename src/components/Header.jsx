@@ -4,7 +4,7 @@ const Header = (props) => {
   const [mMenuState, setMMenuState] = useState(false);
   return (
     <>
-      <nav className={`fixed w-5/6 top-0 z-40 ${props.background} rounded-l-xl rounded-r-xl px-1 py-1`}>
+      <nav className={`fixed lg:w-5/6 w-screen top-0 z-40 ${props.background} rounded-l-xl rounded-r-xl px-1 py-1`}>
         {
           //Desktop Laptop
         }

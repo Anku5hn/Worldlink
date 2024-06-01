@@ -147,18 +147,18 @@ const Home = () => {
       {
         //section 1
       }
-      <div className="fixed left-10 bottom-10" ref={sectionOne}>
+      <div className="fixed left-10 bottom-10 lg:block hidden" ref={sectionOne}>
         <img src={sidebar} className="w-[60px] h-[432px]" />
       </div>
-      <div className="w-full h-screen lg:flex hidden justify-center ">
+      <div className="w-full h-screen flex justify-center ">
         <div
-          className={`w-6 h-6 absolute rounded-full bg-custom-light-blue z-50`}
+          className={`w-6 h-6 absolute rounded-full bg-custom-light-blue z-50 lg:block hidden`}
           style={{
             top: `${cursorPos.y + window.scrollY}px`, 
             left: `${cursorPos.x + window.scrollX}px`,
           }}
         />
-        <div className="lg:w-5/6 w-full">
+        <div className="">
           <Header
             background={headerBg}
             homeview={`border-b-2 border-custom-light-blue ${headerList}`}
@@ -169,14 +169,14 @@ const Home = () => {
             <div className="absolute">
               <img
                 src={TruckSVG}
-                className="w-[250px] h-[250px] z-0 clockwise-spin"
+                className="lg:w-[250px] lg:h-[250px] w-[150px] h-[150px] z-0 clockwise-spin"
                 style={{ transform: `rotate(${scrollValue}deg)` }}
               />
             </div>
             <div className="absolute">
               <img
                 src={AirplaneSVG}
-                className="w-[400px] h-[400px] z-0 clockwise-spin"
+                className="lg:w-[400px] lg:h-[400px] h-[250px] w-[250px] z-0 clockwise-spin"
                 style={{ transform: `rotate(${scrollValue}deg)` }}
               />
             </div>
@@ -188,7 +188,7 @@ const Home = () => {
               </span>{" "}
               Simple
             </h1>
-            <p className="lg:text-[45px] text-[15px] font-mono z-10">
+            <p className="lg:text-[45px] text-[12px] font-mono z-10">
               Serving You with Unparalleled Efficiency.
             </p>
             <p className="font-mono text-[23px] absolute bottom-[100px]">
@@ -202,34 +202,34 @@ const Home = () => {
         //section 2
       }
       <div
-        className="w-full h-screen bg-custom-lighter-blue lg:flex hidden items-center flex-col"
+        className="w-full h-screen bg-custom-lighter-blue flex  items-center flex-col"
         ref={sectionTwo}
       >
         <div className="w-5/6">
-          <h3 className={`text-[24px] font-mono my-10 text-center ${twoHeadingAni}`} ref={sectionTwoHeading}>
+          <h3 className={`lg:text-[24px] text-[18px] font-mono my-10 text-center ${twoHeadingAni}`} ref={sectionTwoHeading}>
             Our Services:
           </h3>
         </div>
-        <div className="w-5/6 flex justify-center gap-5">
+        <div className="w-5/6 flex justify-center gap-5 lg:flex-row flex-col">
           {
             //card 1
           }
           <div>
             <div className={`rounded-lg bg-white ${twoCard1}`} ref={twoCardOne}>
-              <h3 className="text-[45px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
+              <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
                 Logistics Management
               </h3>
-              <p className="text-[23px] font-mono mx-2 my-2">
+              <p className="lg:text-[23px] text-[12px] font-mono mx-2 my-2">
                 We are excellent at{" "}
                 <span className="font-bold">eCommerce Logestics</span>.
               </p>
-              <p className="text-[23px] font-mono mx-2 my2">
+              <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 We have helped over 500 clients
               </p>
-              <p className="text-[23px] font-mono mx-2 my2">
+              <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 with their ecommerce projects.
               </p>
-              <button className="text-[23px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
+              <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
                 Read More
               </button>
             </div>
@@ -239,30 +239,30 @@ const Home = () => {
           }
           <div>
             <div className={`rounded-lg bg-white ${twoCard2}`}>
-              <h3 className="text-[45px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
+              <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
                 Supply Chain Management
               </h3>
-              <p className="text-[23px] font-mono mx-2 my-2">
+              <p className="lg:text-[23px] text-[12px] font-mono mx-2 my-2">
                 We are excellent at{" "}
                 <span className="font-bold">eCommerce Logestics</span>.
               </p>
-              <p className="text-[23px] font-mono mx-2 my2">
+              <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 We have helped over 500 clients
               </p>
-              <p className="text-[23px] font-mono mx-2 my2">
+              <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 with their ecommerce projects.
               </p>
-              <button className="text-[23px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
+              <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
                 Read More
               </button>
             </div>
           </div>
         </div>
         <div className="w-5/6 my-10 ">
-          <h3 className={`text-[45px] text-center font-semibold ${twoH3}`} ref={sectionTwoH3}>
+          <h3 className={`lg:text-[45px] text-[12px] text-center font-semibold ${twoH3}`} ref={sectionTwoH3}>
             We Have The Best Experts.
           </h3>
-          <p className={`text-[23px] hover:underline text-center ${twoH3}`} >
+          <p className={`lg:text-[23px] text-[12px] hover:underline text-center ${twoH3}`} >
             Connect with them now!
           </p>
         </div>
@@ -271,14 +271,14 @@ const Home = () => {
         //section 3 auto text right to left scroll remaining
       }
       <div
-        className="w-full h-auto lg:flex flex-col items-center justify-center hidden"
+        className="w-full h-auto flex flex-col items-center justify-center"
         ref={sectionThree}
       >
         <div cassName="w-5/6">
-          <h3 className="text-[24px] font-mono my-10">Our Stories:</h3>
+          <h3 className="lg:text-[24px] text-center text-[18px] font-mono my-10">Our Stories:</h3>
         </div>
-        <div className="w-5/6 flex gap-5 my-10">
-          <div className="w-3/4">
+        <div className="w-5/6 flex gap-5 my-10 lg:flex-row flex-col">
+          <div className="lg:w-3/4">
             <div className="rounded-xl overflow-x-scroll flex gap-5 flex-row hide-scroll-bar">
               {
                 //Cards
@@ -372,16 +372,16 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="w-1/4">
+          <div className="lg:w-1/4">
             <div className="inline-block px-3">
               <div className=" rounded-lg overflow-hidden w-[360px] h-[640px]">
                 <a
                   href="/#"
-                  className="text-[24px] my-2 mx-2 font-bold font-mono"
+                  className="lg:text-[24px] text-[18px] my-2 mx-2 font-bold font-mono"
                 >
                   Managing at large scale
                 </a>
-                <p className="text-[16px] my-2 mx-2 font-mono">
+                <p className="lg:text-[16px] text-[10px] my-2 mx-2 font-mono">
                   Read how we managed logistics for this MNC!
                 </p>
                 <div className="flex flex-nowrap gap-1">
@@ -401,17 +401,17 @@ const Home = () => {
         //section 4
       }
       <div
-        className="w-full h-[50rem] bg-custom-dark-blue lg:flex items-center flex-col hidden"
+        className="w-full h-[50rem] bg-custom-dark-blue flex items-center flex-col "
         ref={sectionFour}
       >
         <div className="w-5/6 my-10 ">
-          <h2 className="text-[45px] text-white font-mono">
+          <h2 className="lg:text-[45px] text-[24px] text-white font-mono">
             Subscribe to our Newsletter!
           </h2>
         </div>
         <div className="w-5/6 flex h-[520px]">
           <div className="w-3/4 h-full flex-col justify-between flex">
-            <ul className="text-white font-mono text-[23px]">
+            <ul className="text-white font-mono lg:text-[23px] text-[12px]">
               <li>
                 Get the latest updates on{" "}
                 <span className="text-custom-light-blue">Logestics.</span>
@@ -429,13 +429,13 @@ const Home = () => {
             </ul>
             <img
               src={NewsletterSVG}
-              className="w-64 h-64 bg-black rounded-full"
+              className="lg:w-64 lg:h-64 w-24 h-24 bg-black rounded-full"
               style={{ transform: `rotate(${scrollValue}deg)` }}
             />
           </div>
           <div className="w-1/4 flex flex-col items-end h-full justify-end">
-            <ArrowDownOutlined className="text-white text-[45px]  animate-bounce text-center my-5" />
-            <div className="flex gap-2">
+            <ArrowDownOutlined className="text-white lg:text-[45px] text-[24px]  animate-bounce text-center my-5" />
+            <div className="flex gap-2 lg:flex-row flex-col">
               <input
                 defaultValue="Enter Your Email"
                 className="bg-custom-dark-blue border-2 border-white text-white rounded-lg font-mono"
