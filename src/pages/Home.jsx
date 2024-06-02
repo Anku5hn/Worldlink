@@ -423,9 +423,7 @@ const Home = () => {
               <RedditOutlined className='text-[64px] mx-[100px] '/>
               <InstagramOutlined className='text-[64px] mx-[100px] '/>
               <GoogleOutlined className='text-[64px] mx-[100px] '/>
-              <div className='w-1/2 border-2 border-black'>
 
-              </div>
               </div>
               </div>
         </div>
