@@ -33,9 +33,9 @@
 }
 @keyframes marquee-rtl{
     0%{
-        transform: translateX(550%);
+        transform: translateX(600%);
     }100%{
-        transform: translateX(-550%);
+        transform: translateX(-600%);
     }
 }
 
