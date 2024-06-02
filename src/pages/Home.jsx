@@ -10,6 +10,17 @@ import {
   ArrowDownOutlined,
   LeftOutlined,
   RightOutlined,
+  TwitchOutlined,
+  SpotifyOutlined,
+  TikTokOutlined,
+  PinterestOutlined,
+  XOutlined,
+  DiscordOutlined,
+  OpenAIOutlined,
+  RedditOutlined,
+  InstagramOutlined,
+  GoogleOutlined,
+
 } from "@ant-design/icons";
 import NewsletterSVG from "../assets/Ankush - WorldLink - SVG.svg";
 import TruckSVG from "../assets/Ankush - Truck - SVG.svg";
@@ -268,7 +279,7 @@ const Home = () => {
         </div>
       </div>
       {
-        //section 3 auto text right to left scroll remaining
+        //section 3 auto text Marquee animation remaining
       }
       <div
         className="w-full h-auto flex flex-col items-center justify-center"
@@ -395,6 +406,25 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className='w-5/6 h-[150px] mb-10 flex items-center gap-2'>
+          <div>
+            <h3 className='lg:text-[24px] text-[18px]'>Our Clients: </h3>
+          </div>
+              <div className='w-full mr-2 h-auto overflow-hidden flex justify-start whitespace-nowrap'>
+                <div className='animate-marquee'>
+              <TwitchOutlined className='text-[64px] mx-[100px] '/>
+              <SpotifyOutlined className='text-[64px] mx-[100px] '/>
+              <TikTokOutlined className='text-[64px] mx-[100px] '/>
+              <PinterestOutlined className='text-[64px] mx-[100px] '/>
+              <XOutlined className='text-[64px] mx-[100px] '/>
+              <DiscordOutlined className='text-[64px] mx-[100px] '/>
+              <OpenAIOutlined className='text-[64px] mx-[100px] '/>
+              <RedditOutlined className='text-[64px] mx-[100px] '/>
+              <InstagramOutlined className='text-[64px] mx-[100px] '/>
+              <GoogleOutlined className='text-[64px] mx-[100px] '/>
+              </div>
+              </div>
         </div>
       </div>
       {
