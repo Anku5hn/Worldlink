@@ -412,7 +412,7 @@ const Home = () => {
             <h3 className='lg:text-[24px] text-[18px]'>Our Clients: </h3>
           </div>
               <div className='w-full mr-2 h-auto overflow-hidden flex justify-start whitespace-nowrap'>
-                <div className='animate-marquee'>
+                <div className='animate-marquee flex'>
               <TwitchOutlined className='text-[64px] mx-[100px] '/>
               <SpotifyOutlined className='text-[64px] mx-[100px] '/>
               <TikTokOutlined className='text-[64px] mx-[100px] '/>
