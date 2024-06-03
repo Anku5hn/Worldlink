@@ -173,55 +173,53 @@ const Home = () => {
       {
         //section 1
       }
+      <div
+        className={`w-6 h-6 absolute rounded-full bg-custom-light-blue z-50 lg:block hidden`}
+        style={{
+          top: `${cursorPos.y + window.scrollY}px`,
+          left: `${cursorPos.x + window.scrollX}px`,
+        }}
+      ></div>
       <div className="fixed left-10 bottom-10 lg:block hidden" ref={sectionOne}>
         <img src={sidebar} className="w-[60px] h-[432px]" />
       </div>
       <div className="w-full h-screen flex justify-center ">
-        <div
-          className={`w-6 h-6 absolute rounded-full bg-custom-light-blue z-50 lg:block hidden`}
-          style={{
-            top: `${cursorPos.y + window.scrollY}px`,
-            left: `${cursorPos.x + window.scrollX}px`,
-          }}
+        <Header
+          background={headerBg}
+          homeview={`border-b-2 border-custom-light-blue ${headerList}`}
+          servicesview={headerList}
+          aboutusview={headerList}
         />
-        <div className="">
-          <Header
-            background={headerBg}
-            homeview={`border-b-2 border-custom-light-blue ${headerList}`}
-            servicesview={headerList}
-            aboutusview={headerList}
-          />
-          <div className="w-full h-5/6 flex justify-center items-center flex-col">
-            <div className="absolute">
-              <img
-                src={TruckSVG}
-                className="lg:w-[250px] lg:h-[250px] w-[150px] h-[150px] z-0 clockwise-spin"
-                style={{ transform: `rotate(${scrollValue}deg)` }}
-              />
-            </div>
-            <div className="absolute">
-              <img
-                src={AirplaneSVG}
-                className="lg:w-[400px] lg:h-[400px] h-[250px] w-[250px] z-0 clockwise-spin"
-                style={{ transform: `rotate(${scrollValue}deg)` }}
-              />
-            </div>
-
-            <h1 className="z-10 lg:text-[90px] text-[45px] text-center font-mono">
-              Making{" "}
-              <span className="border-b-2 border-custom-light-blue">
-                Logistics
-              </span>{" "}
-              Simple
-            </h1>
-            <p className="lg:text-[45px] text-[12px] font-mono z-10">
-              Serving You with Unparalleled Efficiency.
-            </p>
-            <p className="font-mono text-[23px] absolute bottom-[100px]">
-              Scroll
-            </p>
-            <ArrowDownOutlined className="text-custom-light-blue text-[45px] absolute bottom-[50px] animate-pulse" />
+        <div className="w-full h-5/6 flex justify-center items-center flex-col">
+          <div className="absolute">
+            <img
+              src={TruckSVG}
+              className="lg:w-[250px] lg:h-[250px] w-[150px] h-[150px] z-0 clockwise-spin"
+              style={{ transform: `rotate(${scrollValue}deg)` }}
+            />
           </div>
+          <div className="absolute">
+            <img
+              src={AirplaneSVG}
+              className="lg:w-[400px] lg:h-[400px] h-[250px] w-[250px] z-0 clockwise-spin"
+              style={{ transform: `rotate(${scrollValue}deg)` }}
+            />
+          </div>
+
+          <h1 className="z-10 lg:text-[90px] text-[45px] text-center font-mono">
+            Making{" "}
+            <span className="border-b-2 border-custom-light-blue">
+              Logistics
+            </span>{" "}
+            Simple
+          </h1>
+          <p className="lg:text-[45px] text-[12px] font-mono z-10">
+            Serving You with Unparalleled Efficiency.
+          </p>
+          <p className="font-mono text-[23px] absolute bottom-[100px]">
+            Scroll
+          </p>
+          <ArrowDownOutlined className="text-custom-light-blue text-[45px] absolute bottom-[50px] animate-pulse" />
         </div>
       </div>
       {
@@ -450,7 +448,7 @@ const Home = () => {
                 </p>
                 <div className="flex flex-nowrap gap-1">
                   <button
-                    className="text-[16px] px-1 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
+                    className="text-[16px] px-2 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
                     onClick={() => {
                       firstScroll(-100);
                     }}
@@ -458,7 +456,7 @@ const Home = () => {
                     <LeftOutlined />
                   </button>
                   <button
-                    className="text-[16px] px-1 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
+                    className="text-[16px] px-2 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
                     onClick={() => {
                       firstScroll(100);
                     }}
@@ -562,7 +560,7 @@ const Home = () => {
                 </p>
                 <div className="flex flex-nowrap gap-1">
                   <button
-                    className="text-[16px] px-1 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
+                    className="text-[16px] px-2 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
                     onClick={() => {
                       secondScroll(-100);
                     }}
@@ -570,7 +568,7 @@ const Home = () => {
                     <LeftOutlined />
                   </button>
                   <button
-                    className="text-[16px] px-1 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
+                    className="text-[16px] px-2 py-1 rounded-full border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono"
                     onClick={() => {
                       secondScroll(100);
                     }}
@@ -678,8 +676,7 @@ const Home = () => {
 
               <div className="inline-block px-3">
                 <div className="border border-custom-light-blue rounded-lg overflow-hidden w-[360px] h-[640px]">
-                  <img
-                    src="https://st2.depositphotos.com/1826664/8298/i/950/depositphotos_82989670-stock-photo-scm-supply-chain-management-four.jpg"/>
+                  <img src="https://st2.depositphotos.com/1826664/8298/i/950/depositphotos_82989670-stock-photo-scm-supply-chain-management-four.jpg" />
                   <a
                     href="https://www.manh.com/en-in/our-solutions/supply-chain-management-software/warehouse-management-system"
                     className="text-[24px] my-2 hover:underline font-bold font-mono"
@@ -687,7 +684,9 @@ const Home = () => {
                     Ultimate Guide to Warehouse Automation
                   </a>
                   <p className="text-[16px] my-2 font-mono">
-                  Delve into different automation technologies, their benefits, and how to  choose the right solutions for your needs.
+                    Delve into different automation technologies, their
+                    benefits, and how to choose the right solutions for your
+                    needs.
                   </p>
                   <hr />
                   <a

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import {Link} from 'react-router-dom'
 const Header = (props) => {
   const [mMenuState, setMMenuState] = useState(false);
   return (
@@ -17,24 +18,24 @@ const Header = (props) => {
           <div>
             <ul className="flex flex-row text-[18px] gap-5 items-center">
               <li>
-                <button className={`font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue  ${props.homeview}`}>
+                <Link to='/' className={`font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue  ${props.homeview}`}>
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button className={`font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue ${props.servicesview}`}>
+                <Link to='/services' className={`font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue ${props.servicesview}`}>
                   Services
-                </button>
+                </Link>
               </li>
               <li>
-                <button className={`font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue ${props.aboutusview}`}>
+                <Link to='/aboutus' className={`font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue ${props.aboutusview}`}>
                   About Us
-                </button>
+                </Link>
               </li>
               <li>
-                <button className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-2 hover:bg-custom-dark-blue box-shadow font-mono">
+                <Link to='/getaquote' className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-2 hover:bg-custom-dark-blue box-shadow font-mono">
                   Get a quote
-                </button>
+                </Link>
               </li>
             </ul>
           </div>
