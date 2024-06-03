@@ -11,9 +11,11 @@ const Header = (props) => {
         }
         <div className="justify-between items-center hidden lg:flex">
           <div>
+            <Link to='/'>
             <h3 className={`text-[24px] font-semibold text-custom-light-blue text-shadow font-mono ${props.logoview}`}>
               WorldLink
             </h3>
+            </Link>
           </div>
           <div>
             <ul className="flex flex-row text-[18px] gap-5 items-center">
@@ -45,14 +47,16 @@ const Header = (props) => {
         }
         <div className="justify-between items-center flex lg:hidden">
           <div>
+            <Link to='/'>
             <h3 className="text-[18px] font-semibold text-custom-light-blue text-shadow font-mono">
               WorldLink
             </h3>
+            </Link>
           </div>
           <div className="flex items-center gap-2 justify-center">
-            <button className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-1 box-shadow font-mono text-sm">
+            <Link to='/getaquote' className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-1 box-shadow font-mono text-sm">
               Get a quote
-            </button>
+            </Link>
             <button
               onClick={() => {
                 setMMenuState(!mMenuState);
@@ -71,21 +75,21 @@ const Header = (props) => {
             mMenuState ? "block" : "hidden"
           }`}
         >
-          <ul className="text-center">
+          <ul className="text-center bg-custom-lighter-blue">
             <li>
-              <button className="font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue">
+              <Link to='/' className="font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue">
                 Home
-              </button>
+              </Link>
             </li>
             <li>
-              <button className="font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue">
+              <Link to='/services' className="font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue">
                 Services
-              </button>
+              </Link>
             </li>
             <li>
-              <button className="font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue">
+              <Link to='/aboutus' className="font-mono hover:font-bold hover:border-b-2 hover:border-custom-light-blue">
                 About US
-              </button>
+              </Link>
             </li>
           </ul>
         </div>
