@@ -35,7 +35,7 @@ const Header = (props) => {
                 </Link>
               </li>
               <li>
-                <Link to='/getaquote' className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-2 hover:bg-custom-dark-blue box-shadow font-mono">
+                <Link to='/getintouch' className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-2 hover:bg-custom-dark-blue box-shadow font-mono">
                   Get a quote
                 </Link>
               </li>
@@ -54,7 +54,7 @@ const Header = (props) => {
             </Link>
           </div>
           <div className="flex items-center gap-2 justify-center">
-            <Link to='/getaquote' className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-1 box-shadow font-mono text-sm">
+            <Link to='/getintouch' className="text-custom-white rounded-r-3xl rounded-l-3xl bg-custom-light-blue px-1 box-shadow font-mono text-sm">
               Get a quote
             </Link>
             <button

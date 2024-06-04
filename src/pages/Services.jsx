@@ -5,7 +5,7 @@ const Services = () => {
     <>
       <div className="w-full flex justify-center bg-white h-[50px] ">
         <Header
-          background={" bg-white "}
+          background={"bg-white"}
           homeview={""}
           servicesview={"border-b-2 border-custom-light-blue"}
           aboutusview={""}
