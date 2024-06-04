@@ -6,6 +6,7 @@ import Sidebar2 from "../assets/Ankush - Worldlink - Sidebar2.svg";
 import Sidebar3 from "../assets/Ankush - Worldlink - Sidebar3.svg";
 import Sidebar4 from "../assets/Ankush - Worldlink - Sidebar4.svg";
 import Sidebar5 from "../assets/Ankush - Worldlink - Sidebar5.svg";
+import {Link} from 'react-router-dom'
 import {
   ArrowDownOutlined,
   LeftOutlined,
@@ -243,7 +244,7 @@ const Home = () => {
           }
           <div>
             <div className={`rounded-lg bg-white ${twoCard1}`} ref={twoCardOne}>
-              <Link to="/getintouch">
+              <Link to="/services">
                 <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
                   Logistics Management
                 </h3>
@@ -258,7 +259,7 @@ const Home = () => {
               <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 with their ecommerce projects.
               </p>
-              <Link to="/getintouch">
+              <Link to="/services">
                 <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
                   Read More
                 </button>
@@ -270,7 +271,7 @@ const Home = () => {
           }
           <div>
             <div className={`rounded-lg bg-white ${twoCard2}`}>
-              <Link to="/getintouch">
+              <Link to="/services">
                 <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
                   Supply Chain Management
                 </h3>
@@ -285,7 +286,7 @@ const Home = () => {
               <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 with their ecommerce projects.
               </p>
-              <Link to="/getintouch">
+              <Link to="/services">
                 <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
                   Read More
                 </button>
