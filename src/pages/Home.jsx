@@ -243,9 +243,11 @@ const Home = () => {
           }
           <div>
             <div className={`rounded-lg bg-white ${twoCard1}`} ref={twoCardOne}>
-              <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
-                Logistics Management
-              </h3>
+              <Link to="/getintouch">
+                <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
+                  Logistics Management
+                </h3>
+              </Link>
               <p className="lg:text-[23px] text-[12px] font-mono mx-2 my-2">
                 We are excellent at{" "}
                 <span className="font-bold">eCommerce Logestics</span>.
@@ -256,9 +258,11 @@ const Home = () => {
               <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 with their ecommerce projects.
               </p>
-              <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
-                Read More
-              </button>
+              <Link to="/getintouch">
+                <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
+                  Read More
+                </button>
+              </Link>
             </div>
           </div>
           {
@@ -266,9 +270,11 @@ const Home = () => {
           }
           <div>
             <div className={`rounded-lg bg-white ${twoCard2}`}>
-              <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
-                Supply Chain Management
-              </h3>
+              <Link to="/getintouch">
+                <h3 className="lg:text-[45px] text-[18px] font-mono font-bold mx-2 my-2 cursor-pointer hover:underline hover:text-[50px]">
+                  Supply Chain Management
+                </h3>
+              </Link>
               <p className="lg:text-[23px] text-[12px] font-mono mx-2 my-2">
                 We are excellent at{" "}
                 <span className="font-bold">eCommerce Logestics</span>.
@@ -279,9 +285,11 @@ const Home = () => {
               <p className="lg:text-[23px] text-[12px] font-mono mx-2 my2">
                 with their ecommerce projects.
               </p>
-              <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
-                Read More
-              </button>
+              <Link to="/getintouch">
+                <button className="lg:text-[23px] text-[12px] px-1 py-1 rounded-l-3xl rounded-r-3xl border border-custom-light-blue text-custom-light-blue bg-white my-2 mx-2 hover:bg-custom-light-blue hover:text-white font-mono">
+                  Read More
+                </button>
+              </Link>
             </div>
           </div>
         </div>
