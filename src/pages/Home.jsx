@@ -361,7 +361,7 @@ const Home = () => {
               <div className="inline-block px-3">
                 <div className="border border-custom-light-blue rounded-lg overflow-hidden w-[360px] h-[640px]">
                   <img
-                    src="https://media.licdn.com/dms/image/D5612AQElQ3rlqtoUSA/article-inline_image-shrink_1500_2232/0/1716632855878?e=1721865600&v=beta&t=b8C9sHLvMqpGlLXmJabW99HlExPt2ILQTERTS4eCNQ4"
+                    src="https://img.freepik.com/premium-psd/logistics-transport-square-banner-template-design_810462-837.jpg?w=740"
                     className="w-[400px] h-[400px] rounded-t-lg"
                   />
                   <a
